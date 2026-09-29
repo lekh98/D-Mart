@@ -7,7 +7,7 @@ import Image from 'next/image'
 import axios from 'axios'
 const categories = [
     "Fruits & Vegetables",
-    "Dairy & Eggs",
+    "Dairy & Bakery",
     "Rice, Atta & Grains",
     "Snacks & Biscuits",
     "Spices & Masalas",
@@ -15,7 +15,12 @@ const categories = [
     "Personal Care",
     "Household Essentials",
     "Instant & Packaged Food",
-    "Baby & Pet Care"
+    "Baby & Pet Care",
+    "Electronics & Appliances",
+    "clothes & Accessories",
+    "Home cleaning & Laundry",
+    "Health & Wellness",
+    "Stationery & Office Supplies"
 ]
 
 const units = [
@@ -74,14 +79,14 @@ formData.append("image",backendImage)
                 <div className='flex flex-col items-center mb-8'>
                     <div className='flex items-center gap-3'>
                         <PlusCircle className='text-green-600 w-8 h-8' />
-                        <h1>Add Your Grocery</h1>
+                        <h1>Add Your Products</h1>
                     </div>
-                    <p className='text-gray-500 text-sm mt-2 text-center'>Fill out the details below to add a new grocery item.
+                    <p className='text-gray-500 text-sm mt-2 text-center'>Fill out the details below to add a new Mart item.
                     </p>
                 </div>
                 <form className='flex flex-col gap-6 w-full ' onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="name" className='block text-gray-700 font-medium mb-1'> Grocery Name <span className='text-red-500'>*</span></label>
+                        <label htmlFor="name" className='block text-gray-700 font-medium mb-1'> Product Name <span className='text-red-500'>*</span></label>
                         <input type="text" id='name' placeholder='eg: sweets,Milk ...' 
                         onChange={(e)=>setName(e.target.value)}
                         value={name}
@@ -134,7 +139,7 @@ formData.append("image",backendImage)
                     disabled={loading}
                     className='mt-4 w-full bg-linear-to-r from-green-500 to-green-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl disabled:opacity-60 transition-all flex items-center justify-center gap-2'
                     >
-                        {loading?<Loader className='w-5 h-5 animate-spin'/>:"Add Grocery"}
+                        {loading?<Loader className='w-5 h-5 animate-spin'/>:"Add Product"}
 
                     </motion.button>
                 </form>

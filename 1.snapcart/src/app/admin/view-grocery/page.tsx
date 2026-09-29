@@ -16,7 +16,12 @@ const categories = [
     "Personal Care",
     "Household Essentials",
     "Instant & Packaged Food",
-    "Baby & Pet Care"
+    "Baby & Pet Care",
+    "Electronics & Appliances",
+    "clothes & Accessories",
+    "Home cleaning & Laundry",
+    "Health & Wellness",
+    "Stationery & Office Supplies"
 ]
 const units = [
     "kg", "g", "liter", "ml", "piece", "pack"
