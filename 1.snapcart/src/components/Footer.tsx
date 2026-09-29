@@ -11,18 +11,18 @@ function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-linear-to-r from-green-600 to-green-700 text-white mt-20"
+      className="bg-[#FFD700] text-white mt-20"
     >
-        <div className='w-[90%] md:w-[80%] mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-green-500/40'>
+        <div className='w-[90%] md:w-[80%] mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-yellow-400'>
           <div>
 <h2  className='text-2xl font-bold mb-3'>D-Mart</h2>
-<p className='text-sm text-green-100 leading-relaxed'> Your one-stop online grocery store delivering freshness to your doorstep.  
+<p className='text-sm text-white leading-relaxed'> Your one-stop online mart store delivering freshness to your doorstep.  
             Shop smart, eat fresh, and save more every day!
 </p>
           </div>
 <div >
     <h2 className='text-xl font-semibold mb-3'>Quick Links</h2>
-    <ul className='space-y-2 text-green-100 text-sm'>
+    <ul className='space-y-2 text-white text-sm'>
         <li><Link href={"/"} className='hover:text-white transition'>Home</Link></li>
         <li><Link href={"/cart"} className='hover:text-white transition'>Cart</Link></li>
         <li><Link href={"/my-orders"} className='hover:text-white transition'>My Orders</Link></li>
@@ -31,7 +31,7 @@ function Footer() {
 
 <div>
      <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
-          <ul className="space-y-2 text-green-100 text-sm">
+          <ul className="space-y-2 text-white text-sm">
             <li className="flex items-center gap-2">
               <MapPin size={16} /> Mumbai, India
             </li>
@@ -39,7 +39,7 @@ function Footer() {
               <Phone size={16} /> +91 0000000000
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={16} /> support@snapcart.in
+              <Mail size={16} /> support@d-mart.in
             </li>
           </ul>
           {/* 🌐 Social Links */}
@@ -58,8 +58,8 @@ function Footer() {
 
 </div>
 
-<div className="text-center py-4 text-sm text-green-100 bg-green-800/40">
-        © {new Date().getFullYear()} <span className="font-semibold">Snapcart</span>. All rights reserved.
+<div className="text-center py-4 text-sm text-white bg-[#FFD700]">
+        © {new Date().getFullYear()} <span className="font-semibold">D-Mart</span>. All rights reserved.
       </div>
 
       
