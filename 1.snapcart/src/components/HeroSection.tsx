@@ -18,13 +18,13 @@ function HeroSection() {
     title: "Fresh Organic Groceries 🥦",
     subtitle: "Farm-fresh fruits, vegetables, and daily essentials delivered to you.",
     btnText: "Shop Now",
-   bg:"https://plus.unsplash.com/premium_photo-1663012860167-220d9d9c8aca?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   bg:"https://images.unsplash.com/photo-1588421024623-940056140e58?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 2,
     icon: <Truck className="w-20 h-20 sm:w-28 sm:h-28 text-yellow-400 drop-shadow-lg" />,
     title: "Fast & Reliable Delivery 🚚",
-    subtitle: "We ensure your groceries reach your doorstep in no time.",
+    subtitle: "We ensure your product reach your doorstep in no time.",
     btnText: "Order Now",
     bg:"https://images.unsplash.com/photo-1683553170878-049f180627b0?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -32,7 +32,7 @@ function HeroSection() {
     id: 3,
     icon: <Smartphone className="w-20 h-20 sm:w-28 sm:h-28 text-blue-400 drop-shadow-lg" />,
     title: "Shop Anytime, Anywhere 📱",
-    subtitle: "Easy and seamless online grocery shopping experience.",
+    subtitle: "Easy and seamless online mart shopping experience.",
     btnText: "Get Started",
    bg:"https://plus.unsplash.com/premium_photo-1663091378026-7bee6e1c7247?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -83,7 +83,7 @@ className='flex flex-col items-center justify-center gap-6 max-w-3xl'
 whileHover={{scale:1.09}}
 whileTap={{scale:0.96}}
 transition={{duration:0.2}}
-className='mt-4 bg-white text-green-700 hover:bg-green-100 px-8 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 flex items-center gap-2'
+className='mt-4 bg-white text-yellow-500 hover:bg-green-100 px-8 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 flex items-center gap-2'
 >
     <ShoppingBasket className='w-5 h-5'/>
     {slides[current].btnText}

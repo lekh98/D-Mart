@@ -68,10 +68,10 @@ setShowRight(scrollLeft+clientWidth<=scrollWidth-5)
     viewport={{once:false,amount:0.5}}
 
     >
-     <h2 className='text-2xl md:text-3xl font-bold text-green-700 mb-6 text-center'>🛒 Shop by Category</h2>
+     <h2 className='text-2xl md:text-3xl font-bold text-yellow-400 mb-6 text-center'>🛒 Shop by Category</h2>
      {showLeft &&  <button className='absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center transition-all'
      onClick={()=>scroll("left")} 
-     ><ChevronLeft className='w-6 h-6 text-green-700'/></button> }
+     ><ChevronLeft className='w-6 h-6 text-yellow-400'/></button> }
 
  <div className='flex gap-6 overflow-x-auto px-10 pb-4 scrollbar-hide scroll-smooth' ref={scrollRef}>
 {categories.map((cat)=>{
@@ -81,14 +81,14 @@ setShowRight(scrollLeft+clientWidth<=scrollWidth-5)
     className={`min-w-[150px] md:min-w-[180px] flex flex-col items-center justify-center rounded-2xl ${cat.color} shadow-md hover:shadow-xl transition-all cursor-pointer`}
     >
    <div className='flex flex-col items-center justify-center p-5'>
-      <Icon className='w-10 h-10 text-green-700 mb-3'/>
+      <Icon className='w-10 h-10 text-yellow-400 mb-3'/>
       <p className='text-center text-sm md:text-base font-semibold text-gray-700'>{cat.name}</p>
    </div>
 
     </motion.div>
 })}
  </div>
- {showRight && <button className='absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center transition-all' onClick={()=>scroll("right")} ><ChevronRight className='w-6 h-6 text-green-700'/></button> }
+ {showRight && <button className='absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center transition-all' onClick={()=>scroll("right")} ><ChevronRight className='w-6 h-6 text-yellow-400'/></button> }
 
     </motion.div>
   )
