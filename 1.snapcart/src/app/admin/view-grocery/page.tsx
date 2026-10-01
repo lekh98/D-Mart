@@ -119,9 +119,9 @@ formData.append("image",backendImage)
             >
                 <button
                     onClick={() => router.push("/")}
-                    className='flex items-center justify-center gap-2 bg-green-100 hover:bg-green-200 text-green-700 font-semibold px-4 py-2 rounded-full transition w-full sm:w-auto'
+                    className='flex items-center justify-center gap-2 bg-green-100 hover:bg-green-200 text-yellow-400 font-semibold px-4 py-2 rounded-full transition w-full sm:w-auto'
                 ><ArrowLeft size={18} /><span>Back</span></button>
-                <h1 className='text-2xl md:text-3xl font-extrabold text-green-700 flex items-center justify-center gap-2'><Package size={28} className='text-green-600' />Manage Groceries</h1>
+                <h1 className='text-2xl md:text-3xl font-extrabold text-yellow-400 flex items-center justify-center gap-2'><Package size={28} className='text-yellow-500' />Manage Products</h1>
             </motion.div>
 
             <motion.form initial={{ opacity: 0, y: 10 }}

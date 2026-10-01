@@ -79,12 +79,12 @@ function AdminOrderCard({ order }: { order: IOrder }) {
         >
             <div className='flex flex-col md:flex-row md:items-start md:justify-between gap-4'>
                 <div className='space-y-1'>
-                    <p className='text-lg font-bold flex items-center gap-2 text-green-700'>
+                    <p className='text-lg font-bold flex items-center gap-2 text-yellow-400'>
                         <Package size={20} />
                         Order #{order._id?.toString().slice(-6)}
                     </p>
                     {status!="delivered" &&  <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full border ${order.isPaid
-                            ? "bg-green-100 text-green-700 border-green-300"
+                            ? "bg-green-100 text-yellow-400 border-yellow-200"
                             : "bg-red-100 text-red-700 border-red-300"
                         }`}>
                         {order.isPaid ? "Paid" : "Unpaid"}
@@ -97,22 +97,22 @@ function AdminOrderCard({ order }: { order: IOrder }) {
 
                     <div className='mt-3 space-y-1 text-gray-700 text-sm'>
                         <p className='flex items-center gap-2 font-semibold'>
-                            <User size={16} className='text-green-600' />
+                            <User size={16} className='text-yellow-500' />
                             <span>{order?.address.fullName}</span>
                         </p>
                         <p className='flex items-center gap-2 font-semibold'>
-                            <Phone size={16} className='text-green-600' />
+                            <Phone size={16} className='text-yellow-500' />
                             <span>{order?.address.mobile}</span>
                         </p>
                         <p className='flex items-center gap-2 font-semibold'>
-                            <MapPin size={16} className='text-green-600' />
+                            <MapPin size={16} className='text-yellow-500' />
                             <span>{order?.address.fullAddress}</span>
                         </p>
 
                     </div>
 
                     <p className='mt-3 flex items-center gap-2 text-sm text-gray-700'>
-                        <CreditCard size={16} className='text-green-600' />
+                        <CreditCard size={16} className='text-yellow-500' />
                         <span>{order.paymentMethod === "cod" ? "Cash On Delivery" : "Online Payment"}</span>
                     </p>
               
@@ -134,9 +134,9 @@ function AdminOrderCard({ order }: { order: IOrder }) {
 
                 <div className='flex flex-col items-start md:items-end gap-2'>
                     <span className={`text-xs font-semibold px-3 py-1 rounded-full capitalize ${status === "delivered"
-                            ? "bg-green-100 text-green-700"
+                            ? "bg-green-100 text-yellow-500"
                             : status === "pending"
-                                ? "bg-yellow-100 text-yellow-700"
+                                ? "bg-yellow-100 text-yellow-500"
                                 : "bg-blue-100 text-blue-700"
                         }`}>
                         {status}

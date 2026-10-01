@@ -16,7 +16,7 @@ function OrderSuccess() {
                 }}
                 className='relative'
             >
-                <CheckCircle className='text-green-600 w-24 h-24 md:w-28 md:h-28' />
+                <CheckCircle className='text-yellow-500 w-24 h-24 md:w-28 md:h-28' />
                 <motion.div
                     className='absolute inset-0'
                     initial={{ opacity: 0, scale: 0.6 }}
@@ -66,7 +66,7 @@ function OrderSuccess() {
                     <motion.div
                         whileHover={{ scale: 1.04 }}
                         whileTap={{ scale: 0.93 }}
-                        className='flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-base font-semibold px-8 py-3 rounded-full shadow-lg transition-all'
+                        className='flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-white text-base font-semibold px-8 py-3 rounded-full shadow-lg transition-all'
                     >
                         Go to My Orders <ArrowRight />
                     </motion.div>
@@ -84,10 +84,10 @@ function OrderSuccess() {
                 className="absolute top-0 left-0 w-full h-full pointer-events-none"
 
             >
-                <div className='absolute top-20 left-[10%] w-2 h-2 bg-green-400 rounded-full animate-bounce' />
-                <div className='absolute top-32 left-[30%] w-2 h-2 bg-green-400 rounded-full animate-pulse' />
-                <div className='absolute top-24 left-[50%] w-2 h-2 bg-green-400 rounded-full animate-bounce' />
-                <div className='absolute top-16 left-[70%] w-2 h-2 bg-green-400 rounded-full animate-pulse' />
+                <div className='absolute top-20 left-[10%] w-2 h-2 bg-yellow-400 rounded-full animate-bounce' />
+                <div className='absolute top-32 left-[30%] w-2 h-2 bg-yellow-400 rounded-full animate-pulse' />
+                <div className='absolute top-24 left-[50%] w-2 h-2 bg-yellow-400 rounded-full animate-bounce' />
+                <div className='absolute top-16 left-[70%] w-2 h-2 bg-yellow-400 rounded-full animate-pulse' />
             </motion.div>
 
         </div>

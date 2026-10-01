@@ -10,8 +10,8 @@ import InitUser from "@/InitUser";
 
 
 export const metadata: Metadata = {
-  title: "Snapcart | 10 minutes grocery Delivery App",
-  description: "10 minutes grocery Delivery App",
+  title: "D-Mart | 10 minutes products Delivery App",
+  description: "10 minutes product Delivery App",
 };
 
 export default function RootLayout({
